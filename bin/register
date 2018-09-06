@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'oidc/client/config'
+require 'oidc/client/registration'
+
+client_id = ARGV[0]
+initial_access_token = ARGV[1]
+
+config = Oidc::Client::Config.load
+Oidc::Client::Registration.new(config).register({'clientId' => ARGV[0]}, initial_access_token)

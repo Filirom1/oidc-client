@@ -1,0 +1,2 @@
+oidc_discovery_url: http://localhost:8080/auth/realms/toto/.well-known/openid-configuration
+
